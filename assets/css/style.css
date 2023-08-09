@@ -74,7 +74,7 @@ section{
 .mini-text {
     margin-bottom: 20px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 25px;
     color: #7D7F83;
 }
@@ -87,7 +87,7 @@ section{
 .btn {
     border-radius: 0px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 20px;
     padding: 6px 30px;
     display: inline-flex;
     color: #2B2E34;
@@ -151,7 +151,7 @@ section{
     background: none;
     color: #000122;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     padding: 5px 15px;
     padding-left: 0px;
 }
@@ -186,6 +186,9 @@ header img {
 
 header .nav-item {
     padding: 0 5px;
+}
+header .btn-light{
+    background-color: white;
 }
 
 header .nav-item:last-child {
@@ -224,7 +227,7 @@ main {
 
 .hero-section {
     padding: 100px 0 20px;
-    height: 700px;
+    min-height: 700px;
     position: relative;
 }
 
@@ -257,12 +260,17 @@ main {
 
 /* roi-section */
 .roi-section{
-    padding: 150px 0px;
+    padding: 50px 0px;
 }
 .roi-section .row{
-    min-height: 500px;
+    min-height: 600px;
 }
 
+.our-onboarding .owl-carousel .owl-item img{
+    display: inline;
+    width: auto;
+}
+    
 
 .insights-section .btn-light{
     font-size: 20px;
@@ -296,7 +304,8 @@ main {
 
 /* testemonial */
 .testemonial{
-    padding-top: 230px;
+    padding-top: 170px;
+    margin-top: 50px;
 }
 .testemonial .bottom-qoute{
     position: absolute;
@@ -325,18 +334,21 @@ main {
     align-items: center;
     margin: 20px auto;
 }
+
 .our-onboarding .bg-img{
     position: absolute;
     z-index: 0;
     object-fit: cover;
     width: 100%;
-       height: 100%;
+    height: 100%;
     bottom:40px;
     left: 0;
     right: 0;
     /*    transform: translate(-50%, -50%);*/
 }
-
+#onboarding .main-heading{
+    font-size: 69px;
+}
 /* footer  */
 
 footer{
@@ -348,7 +360,7 @@ footer{
 footer .social-links{
     color: #000000;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     padding: 12px;
 }
 footer .social-links:hover{
@@ -405,6 +417,7 @@ footer .bg-img{
     width: 11px;
     height: 11px;
     display: inline-block;
+    background-color: #5FD1DC;
     opacity: 1;
 }
 
@@ -452,7 +465,7 @@ footer .bg-img{
         font-size: 18px;
     }
     .mini-text {
-        font-size: 18px;
+        font-size: 22px;
     }
     .main-para{
         font-size: 30px;
@@ -462,21 +475,22 @@ footer .bg-img{
     }
 
     .roi-section{
-        padding: 120px 0px;
+        padding: 50px 0px;
     }
     .roi-section .row{
-        min-height: 450px;
+        min-height: 550px;
     }
     footer{
-        padding-top: 300px;
-        margin-top: 400px;
+        padding-top: 450px;
+        margin-top: 200px;
     }
     footer .bg-img{
-        top: -400px;
-        left: 10%;
+        top: -200px;
         margin-bottom: 30px;
-        max-height: 700px;
+        max-height: 650px;
     }
+
+
   
 }
 
@@ -491,14 +505,42 @@ footer .bg-img{
     .main-para{
         font-size: 26px;
     }
+    .hero-section .main-heading{
+        position: relative;
+        z-index: 30;
+    }
+    .hero-section{
+        min-height: 800px;
+    }
+ 
+    .hero-section .book-demo{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 25px;
+    }
+
     .roi-section{
-        padding: 100px 0px;
+        padding: 40px 0px;
     }
     .roi-section .row{
-        min-height: 400px;
+        min-height: 500px;
     }
-    .roi-section img.img-fluid{
-        max-width: 200px;
+    .testemonial .bottom-qoute{
+        bottom: 50px;
+        left: 50px;
+    }
+    .trusted-block ul li {
+        padding: 20px 15px;
+    }
+    .trusted-block img {
+        height: 40px;
+        width: 100px;
+    }
+    .insights-section{
+        min-height: 500px;
+        padding-bottom: 0px;
     }
   
 }
@@ -508,7 +550,7 @@ footer .bg-img{
         padding: 30px 0px;
     }
     .main-heading {
-        font-size: 30px;
+        font-size: 37px;
         line-height: 40px;
 
     }
@@ -517,25 +559,55 @@ footer .bg-img{
         margin-bottom: 12px;
     }
     .mini-text {
-        font-size: 14px;
+        font-size: 20px;
         margin-bottom: 12px;
     }
     .main-para{
-        font-size: 22px;
+        font-size: 24px;
     }
     header img {
         max-width: 100px;
     }
-
+    header .btn-light{
+        font-size: 12px;
+    }
     .hero-section {
-        height: 550px;
+        padding: 80px 0 20px;
+        min-height: 850px;
+    }
+    .hero-section .bg-img{
+        height: auto;
+    }   
+    .our-onboarding .owl-dots{
+        padding: 50px 0px 20px 0px;
+    }
+    .our-onboarding   .bg-img{
+        bottom: 96px;
+    }
+    .gain-section  .owl-dots{
+        padding: 50px 0px;
     }
 
     .roi-section{
         padding: 80px 0px;
     }
-    .insights-section .btn-light {
-        font-size: 16px;
+    .insights-section{
+        min-height: 500px;
+        padding-bottom: 0px;
     }
+    .insights-section .main-para {
+        font-size: 20px;
+    }
+    /* .insights-section .btn-light {
+        font-size: 16px;
+    } */
 
+
+}
+
+@media(max-width:350px){
+    header .container {
+        flex-direction: column;
+        justify-content: center !important;
+    }
 }
