@@ -306,11 +306,62 @@ main {
     padding-top: 50px;
 }
 
+/* .Our onboarding  */
+.our-onboarding .row{
+    min-height: 250px;
+    z-index: 10;
+    position: relative;
+}
+.our-onboarding .step-card{
+    margin: 20px auto;
+}
+.our-onboarding .step-bg{
+    background-color: #fff;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.our-onboarding .bg-img{
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+       height: 100%;
+    bottom:40px;
+    left: 0;
+    right: 0;
+    /*    transform: translate(-50%, -50%);*/
+}
+
 /* footer  */
 
 footer{
-    background: transparent linear-gradient(220deg, #4DDF8E 0%, #4CDE9D 10%, #4BDCAF 20%, #4ADAC0 30%, #49D8D2 40%, #49D5E4 50%, #77B8E4 60%, #9F9FE5 70%, #BF8AE5 80%, #D77CE5 90%, var(--unnamed-color-e275e6) 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+    margin-top: 100px;
+    background: transparent linear-gradient(220deg, #4DDF8E 0%, #4CDE9D 10%, #4BDCAF 20%, #4ADAC0 30%, #49D8D2 40%, #49D5E4 50%, #77B8E4 60%, #9F9FE5 70%, #BF8AE5 80%, #D77CE5 90%, #e275e6 100%) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(220deg, #4DDF8E 0%, #4CDE9D 10%, #4BDCAF 20%, #4ADAC0 30%, #49D8D2 40%, #49D5E4 50%, #77B8E4 60%, #9F9FE5 70%, #BF8AE5 80%, #D77CE5 90%, #E275E6 100%) 0% 0% no-repeat padding-box;
+}
+footer .social-links{
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 12px;
+}
+footer .social-links:hover{
+    color: #fff;
+}
+footer .bg-img{
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    /* width: 100%; */
+    bottom:0px;
+    /* left: -200px; */
+    /*    transform: translate(-50%, -50%);*/
 }
 
 .owl-carousel .owl-prev,
@@ -415,6 +466,16 @@ footer{
     }
     .roi-section .row{
         min-height: 450px;
+    }
+    footer{
+        padding-top: 300px;
+        margin-top: 400px;
+    }
+    footer .bg-img{
+        top: -400px;
+        left: 10%;
+        margin-bottom: 30px;
+        max-height: 700px;
     }
   
 }
